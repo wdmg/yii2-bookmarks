@@ -3,11 +3,12 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+
 /* @var $this yii\web\View */
-/* @var $searchModel wdmg\likes\models\LikesSearch */
+/* @var $searchModel wdmg\bookmarks\models\BookmarksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app/modules/likes', 'Likes');
+$this->title = $this->context->module->name;
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
