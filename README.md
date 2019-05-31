@@ -9,7 +9,7 @@ Bookmark storage module
 
 # Requirements 
 * PHP 5.6 or higher
-* Yii2 v.2.0.13 and newest
+* Yii2 v.2.0.19 and newest
 * [Yii2 Users](https://github.com/wdmg/yii2-users) module (optionaly)
 
 # Installation
