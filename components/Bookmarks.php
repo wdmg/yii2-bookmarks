@@ -7,7 +7,7 @@ namespace wdmg\bookmarks\components;
  * Yii2 Bookmarks
  *
  * @category        Component
- * @version         0.0.2
+ * @version         0.0.3
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
  * @link            https://github.com/wdmg/yii2-bookmarks
  * @copyright       Copyright (c) 2019 W.D.M.Group, Ukraine

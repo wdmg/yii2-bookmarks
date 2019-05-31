@@ -4,7 +4,7 @@
   "keywords": ["yii2", "yii2-bookmarks", "bookmarks", "bookmark", "wdmg"],
   "type": "yii2-extension",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/wdmg/yii2-bookmarks",
   "support": {
     "source": "https://github.com/wdmg/yii2-bookmarks",
@@ -21,7 +21,7 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "^2.0.13"
+    "yiisoft/yii2": "^2.0.19"
   },
   "minimum-stability": "dev",
   "autoload": {
