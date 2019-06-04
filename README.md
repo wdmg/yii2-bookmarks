@@ -42,12 +42,6 @@ To add a module to the project, add the following data in your configuration fil
         ...
     ],
 
-If you have connected the module not via a composer add Bootstrap section:
-
-`
-$config['bootstrap'][] = 'wdmg\bookmarks\Bootstrap';
-`
-
 # Routing
 Use the `Module::dashboardNavItems()` method of the module to generate a navigation items list for NavBar, like this:
 
@@ -63,5 +57,5 @@ Use the `Module::dashboardNavItems()` method of the module to generate a navigat
     ?>
 
 # Status and version [in progress development]
+* v.0.0.5 - Module transferred to base module interface. Update Yii2 version.
 * v.0.0.4 - Bugfix, routing and refactoring
-* v.0.0.3 - Update Yii2 version
