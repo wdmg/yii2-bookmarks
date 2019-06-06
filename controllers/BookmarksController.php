@@ -8,6 +8,7 @@ use wdmg\bookmarks\models\BookmarksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * BookmarksController implements the CRUD actions for Bookmarks model.
@@ -24,6 +25,15 @@ class BookmarksController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'index' => ['get'],
+                ],
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'roles' => ['admin'],
+                        'allow' => true
+                    ],
                 ],
             ],
         ];

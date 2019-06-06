@@ -6,7 +6,7 @@ namespace wdmg\bookmarks;
  * Yii2 Bookmarks
  *
  * @category        Module
- * @version         0.0.5
+ * @version         0.0.6
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
  * @link            https://github.com/wdmg/yii2-bookmarks
  * @copyright       Copyright (c) 2019 W.D.M.Group, Ukraine
@@ -16,6 +16,7 @@ namespace wdmg\bookmarks;
 
 use Yii;
 use wdmg\base\BaseModule;
+use wdmg\bookmarks\components\Bookmarks;
 
 /**
  * bookmarks module definition class
@@ -45,13 +46,32 @@ class Module extends BaseModule
     /**
      * @var string the module version
      */
-    private $version = "0.0.5";
+    private $version = "0.0.6";
 
     /**
      * @var integer, priority of initialization
      */
     private $priority = 10;
 
+
+    /**
+     * {@inheritdoc}
+     */
+    public function init()
+    {
+        parent::init();
+
+        // Set version of current module
+        $this->setVersion($this->version);
+
+        // Set priority of current module
+        $this->setPriority($this->priority);
+
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function bootstrap($app)
     {
         parent::bootstrap($app);
