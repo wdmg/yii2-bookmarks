@@ -20,11 +20,11 @@ class BookmarksController extends Controller
      */
     public function behaviors()
     {
-        return [
+        $behaviors = [
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'index' => ['get'],
+                    'delete' => ['POST'],
                 ],
             ],
             'access' => [
@@ -37,6 +37,21 @@ class BookmarksController extends Controller
                 ],
             ],
         ];
+
+        // If auth manager not configured use default access control
+        if(!Yii::$app->authManager) {
+            $behaviors['access'] = [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'roles' => ['@'],
+                        'allow' => true
+                    ],
+                ]
+            ];
+        }
+
+        return $behaviors;
     }
 
     /**
