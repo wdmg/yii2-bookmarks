@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## 0.0.6 (2019-06-09)
+## 0.0.7 (2019-06-09)
  * Added choice param for non interactive mode
  
 ## 0.0.6 (2019-06-07)
