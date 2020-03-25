@@ -6,7 +6,7 @@ namespace wdmg\bookmarks;
  * Yii2 Bookmarks
  *
  * @category        Module
- * @version         0.0.9
+ * @version         0.0.10
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
  * @link            https://github.com/wdmg/yii2-bookmarks
  * @copyright       Copyright (c) 2019 - 2020 W.D.M.Group, Ukraine
@@ -19,7 +19,7 @@ use wdmg\base\BaseModule;
 use wdmg\bookmarks\components\Bookmarks;
 
 /**
- * bookmarks module definition class
+ * Bookmarks module definition class
  */
 class Module extends BaseModule
 {
@@ -46,7 +46,7 @@ class Module extends BaseModule
     /**
      * @var string the module version
      */
-    private $version = "0.0.9";
+    private $version = "0.0.10";
 
     /**
      * @var integer, priority of initialization

@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::encode($this->title) ?> <small class="text-muted pull-right">[v.<?= $this->context->module->version ?>]</small>
     </h1>
 </div>
-<div class="options-index">
+<div class="bookmarks-index">
     <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -33,6 +33,21 @@ $this->params['breadcrumbs'][] = $this->title;
             'is_like',
             'created_at',
             'updated_at',
+        ],
+        'pager' => [
+            'options' => [
+                'class' => 'pagination',
+            ],
+            'maxButtonCount' => 5,
+            'activePageCssClass' => 'active',
+            'prevPageCssClass' => '',
+            'nextPageCssClass' => '',
+            'firstPageCssClass' => 'previous',
+            'lastPageCssClass' => 'next',
+            'firstPageLabel' => Yii::t('app/modules/mailer', 'First page'),
+            'lastPageLabel'  => Yii::t('app/modules/mailer', 'Last page'),
+            'prevPageLabel'  => Yii::t('app/modules/mailer', '&larr; Prev page'),
+            'nextPageLabel'  => Yii::t('app/modules/mailer', 'Next page &rarr;')
         ],
     ]); ?>
     <hr/>

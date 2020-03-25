@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## 0.0.10 (2020-03-25)
+ * Added pagination
+ * Up to date dependencies
+
 ## 0.0.9 (2019-12-10)
  * Fixed deprecated class declaration
 
