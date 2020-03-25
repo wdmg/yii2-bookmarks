@@ -44,10 +44,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'nextPageCssClass' => '',
             'firstPageCssClass' => 'previous',
             'lastPageCssClass' => 'next',
-            'firstPageLabel' => Yii::t('app/modules/mailer', 'First page'),
-            'lastPageLabel'  => Yii::t('app/modules/mailer', 'Last page'),
-            'prevPageLabel'  => Yii::t('app/modules/mailer', '&larr; Prev page'),
-            'nextPageLabel'  => Yii::t('app/modules/mailer', 'Next page &rarr;')
+            'firstPageLabel' => Yii::t('app/modules/bookmarks', 'First page'),
+            'lastPageLabel'  => Yii::t('app/modules/bookmarks', 'Last page'),
+            'prevPageLabel'  => Yii::t('app/modules/bookmarks', '&larr; Prev page'),
+            'nextPageLabel'  => Yii::t('app/modules/bookmarks', 'Next page &rarr;')
         ],
     ]); ?>
     <hr/>
