@@ -10,7 +10,7 @@ namespace wdmg\bookmarks\components;
  * @version         0.0.10
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
  * @link            https://github.com/wdmg/yii2-bookmarks
- * @copyright       Copyright (c) 2019 - 2020 W.D.M.Group, Ukraine
+ * @copyright       Copyright (c) 2019 - 2021 W.D.M.Group, Ukraine
  * @license         https://opensource.org/licenses/MIT Massachusetts Institute of Technology (MIT) License
  *
  */
