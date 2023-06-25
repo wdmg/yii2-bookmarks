@@ -1,6 +1,9 @@
 Changelog
 =========
 
+## 1.0.0 (2023-06-25)
+ * Update copyrights, fix menu dashboard
+
 ## 0.0.10 (2020-03-25)
  * Added pagination
  * Up to date dependencies
